@@ -39,4 +39,9 @@ app.get('/', zValidator('query', z.object({ threadUrl: z.string().refine(isValid
   return c.json({ response: resp.response });
 })
 
+app.get('/hello', zValidator('query', z.object({ name: z.string().optional() })), (c) => {
+  const name = c.req.valid('query').name ?? 'World'
+  return c.text(`Hello, ${name} \nWelcome to Backend Worker!`)
+})
+
 export default app
