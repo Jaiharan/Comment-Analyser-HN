@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-     "build": "pnpm --filter backend-worker install && pnpm --filter backend-worker build && next build",
+    "build": "pnpm --filter backend-worker install && pnpm --filter backend-worker build && next build",
     "start": "next start",
     "lint": "next lint",
     "pages:build": "npx @cloudflare/next-on-pages",
@@ -24,7 +24,8 @@
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.25.46"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.11.3",
