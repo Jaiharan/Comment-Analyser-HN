@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "cd backend-worker && pnpm install && pnpm build && cd .. && next build",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"

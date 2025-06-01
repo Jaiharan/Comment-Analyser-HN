@@ -6,7 +6,6 @@ import { handleInputs } from "./actions";
 
 function GetInput() {
   const [response, setResponse] = React.useState<string | null>(null);
-  // Handling async operation so loading doesn't work
   const [loading, setLoading] = React.useState(false);
 
   return (
