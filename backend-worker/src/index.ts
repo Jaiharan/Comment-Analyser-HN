@@ -1,5 +1,7 @@
 import { zValidator } from '@hono/zod-validator'
 import { Hono } from 'hono'
+import { JwtHeaderInvalid } from 'hono/utils/jwt/types'
+import React from 'react'
 import { z } from 'zod'
 
 type Bindings = {
